@@ -1,0 +1,194 @@
+/* style_Herbst */
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: lightgoldenrodyellow;
+  color:rgb(88, 85, 10);
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+  }
+
+  @media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+  }
+
+section,h1,h2,h3,h4, table {
+  margin: 20px;
+}
+section{
+  padding: 10px;
+  border-radius: 20px;
+}
+
+header {
+  background-image: linear-gradient(to right, rgb(234, 163, 11), rgb(234, 237, 143));
+  padding: 5px;
+  text-align: center;
+  color:rgb(88, 85, 10);
+  font-size: 25px;
+  font-weight: bold;
+  }
+
+
+footer {
+  background-image: linear-gradient(to left, beige, rgb(88, 85, 10));
+  padding: 5px 0 20px 50px;
+  text-align: left;
+  color: white;
+}
+
+  /* general table */
+  th, td{
+    text-align: left;
+  }
+
+/* search table */
+table.search {
+  width:90%;
+  height:auto;
+}
+
+.search {
+  border: 3px solid grey;
+}
+
+.search tr:nth-child(odd){
+  background-color: lightgoldenrodyellow;
+}
+.search tr:nth-child(even){
+  background-color: white;
+}
+
+/* book table */
+table.book {
+  width:90%;
+  height:auto;
+}
+
+.book {
+  border: 3px solid grey;
+}
+
+.book tr:nth-child(odd){
+  background-color: rgb(224, 222, 181);
+}
+.book tr:nth-child(even){
+  background-color: beige;
+}
+
+
+/* Add Scroll To Top Button */
+#toTop{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: auto;
+  font-size: 16px;
+  font-weight: bold;
+  border: 3px solid green;
+  border-radius: 12px;
+  background-color:white;
+  color:green;
+  padding: 10px;
+}
+
+/* Add Smooth Scroll */
+html{
+   scroll-behavior: smooth;
+}
+
+.button{
+  background-color: white;
+  border: 3px solid green;
+  color: green;
+  display: inline-block;
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 12px;
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+label{
+  display: inline-block;
+  padding-left: 5px;
+  margin-left: 20px;
+  margin-bottom: 0;
+}
+
+input, textarea{
+  padding-left: 5px;
+  margin-top: 5px;
+  margin-left: 20px;
+  margin-bottom: 0;
+}
+
+/* Image Gallery */
+.gallery {
+  border: 1px solid grey;
+  float: left;
+  height: 250px;
+  width: auto;
+  box-shadow: 0 4px 8px 0 grey;
+  margin: 25px;
+}
+.gallery img {
+  height: 80%;
+  width: auto;
+}
+.description {
+  text-align: center;
+  padding: 5px;
+}
+
+/* footer-Flexbox */
+.flex-footer{
+display: flex;
+flex-wrap: nowrap;
+background-color: inherit;
+padding-top: 10px;
+height: auto;
+}
+.flex-footer > div {
+  background-color: inherit;
+  width: auto;
+  margin-left:  15px;
+  padding: 0;
+  text-align: center;
+  font-size: inherit;
+  font-weight: bold;
+  line-height: 40px;
+  }
+
+/* Social Media Style */
+.fa {
+  padding: 10px;
+  font-size: 40px;
+  text-align: center;
+  text-decoration: none;
+  margin:0;
+  border-radius: 12px;
+}
+
+.fa:hover {
+    opacity: 0.8;
+}
+.fa-envelope {
+  background: #3d1ce1;
+  color: white;
+}
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+.fa-xing {
+  background: rgb(6, 152, 160);
+  color: white;
+}
+
+
+
+

@@ -1,0 +1,298 @@
+/* style_Frühling */
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(243, 207, 227);
+  color:brown;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+  }
+
+  @media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+  }
+
+section,h1,h2,h3,h4, table, label {
+  margin: 20px;
+}
+section{
+  padding: 10px;
+  border-radius: 20px;
+}
+
+header {
+  background-image: linear-gradient(to right, rgb(22, 186, 85), rgb(161, 231, 190));
+  padding: 5px;
+  text-align: center;
+  color:rgb(36, 21, 169);
+  font-size: 25px;
+  font-weight: bold;
+  }
+
+
+footer {
+  background-image: linear-gradient(to left, rgb(109, 206, 230), rgb(230, 41, 76));
+  padding: 5px 0 20px 50px;
+  text-align: left;
+  color: white;
+}
+
+
+
+/* horizontal navigation-Flexbox */
+  .flex-container {
+    display: flex;
+    flex-wrap: nowrap;
+    background-color:grey;
+   
+  }
+  
+  .flex-container button, .flex-container a{
+    min-width: 100px;
+    padding: 14px 16px;
+    color: white;
+    line-height: 1.5;
+    font-size: 16px;
+    text-align: center;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;  
+    text-decoration: none;
+    border:none;
+  }
+
+/* dropdown list */
+.dropdown {
+  overflow: hidden;
+  float:left;
+}
+
+.flex-container button:hover{
+  background-color: rgb(62, 65, 62);
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: lightyellow;
+  min-width: 150px;
+  box-shadow: 0px 8px 16px 0px grey;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 14px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: lightgrey;
+  }
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* general list style */
+ul {
+  list-style-type: none;
+  margin: 0;
+  }
+
+li a {
+  text-align: left;
+  text-decoration: none;
+  padding: 10px 10px 10px 10px;
+  }
+
+  /* general table */
+  th, td{
+    text-align: left;
+  }
+
+/* Lebenslauf table */
+table.Lebenslauf {
+  width:85%;
+  height:auto;
+}
+
+.Lebenslauf {
+  border: 3px solid grey;
+}
+
+.Lebenslauf tr:nth-child(odd){
+  background-color: lightgray;
+}
+
+/* image on the right side */
+ .RightSide img {
+  border-radius: 20px;
+  border: 1px solid grey;
+  float: right;
+  right: 50px;
+  position: fixed;
+  padding: 5px;
+  max-width: 10%;
+  height:auto;
+  
+}
+
+/* allgemein image */
+img:hover {
+  box-shadow: 0 0 2px 2px rgba(0, 140, 186, 0.5);
+} 
+
+/* Image Gallery */
+div.gallery {
+  border: 1px solid grey;
+  float: left;
+  height: 250px;
+  width: auto;
+  box-shadow: 0 4px 8px 0 grey;
+  margin: 25px;
+}
+div.gallery img {
+  height: 80%;
+  width: auto;
+}
+div.description {
+  text-align: center;
+  padding: 5px;
+}
+
+/* insert a video */
+video{
+  border: 1px solid grey;
+  float: left;
+  height: 250px;
+  width: auto;
+  box-shadow: 0 4px 8px 0 grey;
+  margin: 25px;
+}
+
+/* Add Scroll To Top Button */
+#toTop{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: auto;
+  font-size: 18px;
+  font-weight: bold;
+  border: 3px solid green;
+  border-radius: 12px;
+  background-color:white;
+  color:green;
+  padding: 10px;
+}
+
+/* Image as aside*/
+img#AsideImg{
+  opacity: 0.2;
+  width: 100%;
+  height: auto;
+  position:relative;
+}
+
+/* Image as background*/
+img#BackImg{
+  opacity: 0.2;
+  width: 100%;
+  height: auto;
+}
+
+/* Bio Page */
+.Subol {
+  ::marker { content: counters(list-item,'.') '. '}
+}
+
+
+/* Contact page */
+form, textarea, input, select {
+  font-size: 16px;
+}
+
+label{
+  display: inline-block;
+  width: 90px;
+  padding-left: 5px;
+  margin-left: 5%;
+  margin-bottom: 0;
+}
+
+ input#Interesse{
+  margin-left: 20px;
+
+}
+
+#Message {
+  position: relative;
+  width: 300px;
+  height: 200px;
+  left: 120px;
+  border: 3px solid black;
+  margin-top: 0;
+}
+
+#Send_Button {
+  position:relative;
+  left:380px;
+  font-size: 16px;
+  margin-bottom: 50px;
+}
+
+
+/* footer-Flexbox */
+.flex-footer{
+display: flex;
+flex-wrap: nowrap;
+background-color: inherit;
+padding-top: 10px;
+height: auto;
+}
+.flex-footer > div {
+  background-color: inherit;
+  width: auto;
+  margin-left:  15px;
+  padding: 0;
+  text-align: center;
+  font-size: inherit;
+  font-weight: bold;
+  line-height: 40px;
+  }
+
+/* Social Media Style */
+.fa {
+  padding: 10px;
+  font-size: 40px;
+  text-align: center;
+  text-decoration: none;
+  margin:0;
+  border-radius: 12px;
+}
+
+.fa:hover {
+    opacity: 0.8;
+}
+.fa-envelope {
+  background: #3d1ce1;
+  color: white;
+}
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+.fa-xing {
+  background: rgb(6, 152, 160);
+  color: white;
+}
+
+
+
+
